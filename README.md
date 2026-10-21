@@ -31,12 +31,12 @@ https://your-endpoint.example.com/v1
 
 ```bash
 # Windows PowerShell
-$env:ANTHROPIC_BASE_URL="https://your-endpoint.example.com/v1"
+$env:ANTHROPIC_BASE_URL="https://your-endpoint.example.com"
 $env:ANTHROPIC_AUTH_TOKEN="你的Key"
 claude
 
 # macOS / Linux
-export ANTHROPIC_BASE_URL="https://your-endpoint.example.com/v1"
+export ANTHROPIC_BASE_URL="https://your-endpoint.example.com"
 export ANTHROPIC_AUTH_TOKEN="你的Key"
 claude
 ```
