@@ -31,12 +31,12 @@ https://api.97wl.cc/v1
 
 ```bash
 # Windows PowerShell
-$env:ANTHROPIC_BASE_URL="https://api.97wl.cc/v1"
+$env:ANTHROPIC_BASE_URL="https://api.97wl.cc"
 $env:ANTHROPIC_AUTH_TOKEN="你的Key"
 claude
 
 # macOS / Linux
-export ANTHROPIC_BASE_URL="https://api.97wl.cc/v1"
+export ANTHROPIC_BASE_URL="https://api.97wl.cc"
 export ANTHROPIC_AUTH_TOKEN="你的Key"
 claude
 ```
