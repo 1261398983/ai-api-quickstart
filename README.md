@@ -57,7 +57,7 @@ codex
 model_provider = "removed"
 
 [model_providers.removed]
-name = "DSH API"
+name = "removed"
 base_url = "https://your-endpoint.example.com/v1"
 env_key = "OPENAI_API_KEY"
 ```
