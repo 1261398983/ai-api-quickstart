@@ -5,7 +5,7 @@
 **统一端点**
 
 ```
-https://api.dshapi.icu/v1
+https://api.97wl.cc/v1
 ```
 
 兼容 OpenAI 与 Anthropic 双协议。改一行 `base_url`，工具零改造。
@@ -31,12 +31,12 @@ https://api.dshapi.icu/v1
 
 ```bash
 # Windows PowerShell
-$env:ANTHROPIC_BASE_URL="https://api.dshapi.icu/v1"
+$env:ANTHROPIC_BASE_URL="https://api.97wl.cc/v1"
 $env:ANTHROPIC_AUTH_TOKEN="你的Key"
 claude
 
 # macOS / Linux
-export ANTHROPIC_BASE_URL="https://api.dshapi.icu/v1"
+export ANTHROPIC_BASE_URL="https://api.97wl.cc/v1"
 export ANTHROPIC_AUTH_TOKEN="你的Key"
 claude
 ```
@@ -46,7 +46,7 @@ claude
 环境变量方式：
 
 ```bash
-export OPENAI_BASE_URL="https://api.dshapi.icu/v1"
+export OPENAI_BASE_URL="https://api.97wl.cc/v1"
 export OPENAI_API_KEY="你的Key"
 codex
 ```
@@ -54,11 +54,11 @@ codex
 或持久化到 `~/.codex/config.toml`：
 
 ```toml
-model_provider = "dshapi"
+model_provider = "97wl"
 
-[model_providers.dshapi]
-name = "DSH API"
-base_url = "https://api.dshapi.icu/v1"
+[model_providers.97wl]
+name = "97wl"
+base_url = "https://api.97wl.cc/v1"
 env_key = "OPENAI_API_KEY"
 ```
 
@@ -69,7 +69,7 @@ env_key = "OPENAI_API_KEY"
 | 字段 | 值 |
 |---|---|
 | 类型 | OpenAI（或 Anthropic） |
-| API 地址 | `https://api.dshapi.icu/v1` |
+| API 地址 | `https://api.97wl.cc/v1` |
 | 密钥 | 你的 Key |
 
 点「检查」自动拉取模型列表。
@@ -78,7 +78,7 @@ env_key = "OPENAI_API_KEY"
 
 `设置` → `自定义接口`
 
-- 接口地址：`https://api.dshapi.icu/v1`
+- 接口地址：`https://api.97wl.cc/v1`
 - API Key：你的 Key
 
 ## Python (OpenAI SDK)
@@ -88,7 +88,7 @@ from openai import OpenAI
 
 client = OpenAI(
     api_key="你的Key",
-    base_url="https://api.dshapi.icu/v1",
+    base_url="https://api.97wl.cc/v1",
 )
 
 resp = client.chat.completions.create(
@@ -105,7 +105,7 @@ import OpenAI from "openai";
 
 const client = new OpenAI({
   apiKey: "你的Key",
-  baseURL: "https://api.dshapi.icu/v1",
+  baseURL: "https://api.97wl.cc/v1",
 });
 
 const resp = await client.chat.completions.create({
@@ -118,7 +118,7 @@ console.log(resp.choices[0].message.content);
 ## curl 自测
 
 ```bash
-curl https://api.dshapi.icu/v1/chat/completions \
+curl https://api.97wl.cc/v1/chat/completions \
   -H "Authorization: Bearer 你的Key" \
   -H "Content-Type: application/json" \
   -d '{"model":"claude-sonnet-4-5","messages":[{"role":"user","content":"hi"}]}'
@@ -131,7 +131,7 @@ curl https://api.dshapi.icu/v1/chat/completions \
 | 报错 | 原因 | 处理 |
 |---|---|---|
 | `401 Unauthorized` | Key 错误或未携带 | 检查 `Authorization` 头，确认 Key 完整无空格 |
-| `404 Not Found` | base_url 缺或多写 `/v1` | 统一使用 `https://api.dshapi.icu/v1` |
+| `404 Not Found` | base_url 缺或多写 `/v1` | 统一使用 `https://api.97wl.cc/v1` |
 | `model not found` | 模型名不匹配 | 后台查看当前可用模型列表 |
 | 连接超时 | 本地代理干扰 | 关闭系统代理，或将端点加入代理白名单 |
 | `insufficient quota` | 余额不足 | 后台充值（支持国内支付方式） |
@@ -151,6 +151,6 @@ curl https://api.dshapi.icu/v1/chat/completions \
 ## 相关资源
 
 - **在线配置指南**：https://1261398983.github.io/ai-api-guide/
-- **API 端点**：https://api.dshapi.icu/v1
+- **API 端点**：https://api.97wl.cc/v1
 
 价格与模型可用性以平台后台实际展示为准。
