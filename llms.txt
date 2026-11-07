@@ -1,4 +1,3 @@
-# removed
 
 > AI API 中转网关：同一个 base URL 同时支持 OpenAI 与 Anthropic 两套协议。
 
@@ -10,9 +9,6 @@
 
 ## 链接
 
-- 官网：https://your-endpoint.example.com
-- 注册：https://your-endpoint.example.com
-- 统一端点：https://your-endpoint.example.com/v1
 
 ## 可用模型
 
